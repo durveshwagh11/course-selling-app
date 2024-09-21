@@ -2,16 +2,24 @@ const express = require("express");
 const app = express();
 
 
-app.post("/login", (req, res => {
+app.post("/user/login", (req, res => {
     res.send("login")
 }))
 
-app.post("/signup", (req, res => {
+app.post("/user/signup", (req, res => {
     res.send("signup")
 }))
 
-app.post("/login", (req, res => {
+app.get("/user/purchases", (req, res => {
+    res.send("purchases")
+}))
+
+app.post("/course/purchase", (req, res => {
     res.send("login")
 }))
 
+
+app.get("/user/course", (req, res => {
+    res.send("login")
+}))
 app.listen(3000);
