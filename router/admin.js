@@ -4,9 +4,7 @@ const { adminModel } = require("../db")
 
 
 adminRouter.post("/signup", function(req, res) {
-    res.json({
-        message: "signup endpoint"
-    })
+    const {email, password, firstname, lastname} = req.body;
 })
 
 adminRouter.post("/signin", function(req, res) {

@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const { userRouter } = require("./router/user")
 const { courseRouter } = require("./router/course")
 const { adminRouter } = require("./router/admin");
-
+app.use(express.json());
 
 app.use("/api/v1/user", userRouter)
 app.use("/api/v1/course", courseRouter)
